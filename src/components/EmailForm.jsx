@@ -1,9 +1,9 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 
-function EmailForm() {
+function EmailForm({colorClass}) {
   return (
-    <form className="heroForm">
+    <form className={"heroForm " + colorClass}>
       <h3>
         Ready to watch? Enter your email to create or restart your membership.
       </h3>

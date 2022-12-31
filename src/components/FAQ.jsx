@@ -29,19 +29,21 @@ function FAQ() {
       desc: "The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space. Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.",
     },
   ];
+
+  var closedArr = [true, true, true, true, true, true];
   return (
     <div className="FAQ">
-      <h1>Frequently Asked Questions</h1>
+      <h1 className="FAQHead">Frequently Asked Questions</h1>
       <ul>
         {faqData.map((data, key) => {
         return (
             <li>
-                <FaqCard question={data.question} desc={data.desc} closed={true} />
+                <FaqCard question={data.question} desc={data.desc} closed={closedArr[key]} />
             </li>
         );
-      })}
+      })} 
       </ul>
-      <EmailForm />
+      <EmailForm colorClass="bottomForm" />
     </div>
   );
 }

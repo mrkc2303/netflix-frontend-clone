@@ -14,7 +14,7 @@ function Hero() {
                 <h2>
                     Watch anywhere. Cancel anytime.
                 </h2>
-                <EmailForm />
+                <EmailForm colorClass="headForm" />
             </div>
         </div>
     </div>
